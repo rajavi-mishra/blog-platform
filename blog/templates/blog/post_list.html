@@ -18,18 +18,18 @@
         <section id="blogList">
             <div class="container">
                 {% for post in posts %}
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="..." alt="Card image cap">
-                            <div class="card-body">
-                              <h3 class="card-title">{{ post.title }}</h3>
-                              <h4 class="card-text">Published on {{ post.published_date }}</h4>
-                              <p class="card-text">{{ post.text }}</p>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                <h2 class="card-title">{{ post.title }}</h2>
+                                <h6 class="card-text">Published on {{ post.published_date }}</h6>
+                                <p class="card-text">{{ post.text }}</p>
+                                </div>
                             </div>
-                          </div>
+                            </div>
                         </div>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
         </section>
